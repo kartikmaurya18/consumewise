@@ -128,4 +128,7 @@ select {
   .result {
     font-size: 18px;
   }
+}/* Style for the select placeholder option */
+.select-placeholder option[value=""][disabled] {
+  color: #a0a0a0; /* Light gray color for placeholder */
 }
