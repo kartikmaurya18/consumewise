@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #003049; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #003049; /* Dark blue for headings */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #b3e5fc; /* Slightly darker light blue */
+  }
+  
+  .navbar a {
+    margin-left: 15px;
+    color: #003049; /* Dark blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #003049; /* Dark blue for labels */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #b3e5fc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0288d1; /* Button blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+  }
+  
+  body {
+    background-color: #F0F4F8;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+  }
+  /* Media Queries for Responsive Design */
+  /* */
+  /* styles.css */
+
+/* Mobile-first design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      min-height: auto; /* Let container height adjust */
+      padding: 10px;
+  }
+
+  form {
+      max-width: 90%; /* Form takes more width on mobile */
+      padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+      padding: 12px; /* Larger padding for touch-friendly inputs */
+  }
+
+  button {
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 5px;
+  }
+
+  .navbar a {
+      font-size: 14px;
+  }
+
+  form {
+      padding: 10px; /* Reduced padding on extra small screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: stretch; /* Stretch items to full width */
+    min-height: auto; /* Allow height to adjust based on content */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    justify-content: center; /* Center items in navbar */
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Space between navbar links */
+  }
+
+  form {
+    max-width: 90%; /* Allow form to take more width on smaller screens */
+    margin: 0 auto; /* Center the form */
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 12px; /* Increase padding for touch-friendly inputs */
+  }
+
+  button {
+    padding: 12px; /* Increase button padding for touch-friendliness */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px; /* Further reduce navbar padding for very small screens */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Slightly smaller font for navbar links */
+  }
+
+  form {
+    padding: 15px; /* Reduced padding for form on smaller screens */
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  button {
+    font-size: 14px; /* Smaller font size for inputs and buttons */
+  }
+}

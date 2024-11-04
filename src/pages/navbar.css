@@ -1,0 +1,66 @@
+/* navbar.css */
+
+/* Section 1 */
+@media (max-width: 768px) {
+.navbar {
+    padding: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%; /* Change this to 100% to fit the screen width */
+    height: 173px; /* Initial height (can be overridden by media queries) */
+    background: #1E3A8A; /* Dark blue background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+/* Logo or Background Image */
+.navbar .logo {
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 15px;
+    top: 15px;
+    background: url('image-removebg-preview (9).png') no-repeat center center; /* Ensure proper image positioning */
+    background-size: contain; /* Ensure the image fits properly */
+}
+
+/* Navbar Links Styling */
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Positioning for links */
+    top: 40px; /* Align with logo */
+    right: 35px; /* Align with right edge */
+}
+}
+
+.navbar ul li {
+    display: inline; /* Horizontal layout for list items */
+    margin-left: 20px; /* Spacing between links */
+}
+
+.navbar ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar ul li a:hover {
+    color: #FFDD57; /* Change color on hover */
+}
+
+/* Media Queries for Responsive Navbar Height */
+@media (max-width: 768px) { /* Tablet and mobile */
+    .navbar {
+        height: 50px; /* Smaller height for mobile */
+    }
+}
+
+@media (min-width: 769px) { /* Desktop */
+    .navbar {
+        height: 70px; /* Standard height for desktop */
+    }
+}
