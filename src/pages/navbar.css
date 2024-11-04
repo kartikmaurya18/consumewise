@@ -1,7 +1,3 @@
-/* navbar.css */
-
-/* Section 1 */
-@media (max-width: 768px) {
 .navbar {
     padding: 10px;
     justify-content: space-between;
@@ -33,7 +29,6 @@
     position: absolute; /* Positioning for links */
     top: 40px; /* Align with logo */
     right: 35px; /* Align with right edge */
-}
 }
 
 .navbar ul li {
